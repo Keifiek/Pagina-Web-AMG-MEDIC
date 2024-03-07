@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultorios de calidad</title>
+    <link rel="icon" type="image/jpeg" href="images/ICON.jpg">
+    <meta name="theme-color" content="#09f">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header> 
+        <nav>
+            <a href="#TOP"><img src="images/ICON.jpg" alt="Icono principal"></a>
+            <a href="#FAQ">Conoce mas de nosotros</a>
+            <a href="#CONSULTORIOS">Consultorios</a>
+            <a href="#CITA">Registra tu cita</a>
+            <a href="https://discord.gg/5APZBEYCuc" target="_blank" rel="noreferrer">Foro</a>
+        </nav>   
+ 
+    </header>
+    <main>
+        <section class="hero-section" id="TOP">
+            <div class="prueba">
+                <h1>Donde tu bienestar sera la prioridad</h1>
+                <a href="#CITA">Solicita tu cita</a>
+            </div>
+            
+        </section>
+        <h3>Conoce sobre nuestros profesionales</h3>
+        <p>Nuestros profesionistas en el área de la salud son elegidos minuciosamente para formar parte de nuestro equipo solo entre los mejores.</p>
+        <div class="servicios">
+            <h3>Servicios</h3>
+                <ul>
+                    <li>Toma de muestras para laboratorio</li>
+                    <li>Certificados médicos</li>
+                    <li>Ecosonogramas</li>
+                    <li>Tomografias</li>
+                    <li>Colposcopias</li>
+                    <li>Consulta general</li>
+                </ul>
+        </div>
+        <aside>
+            <p>
+                Las consultas a domicilio para pacientes postrados en cama serán posibles proximamente!
+            </p>
+        </aside>
+        <h4 id="CONSULTORIOS">Ubicación de nuestros consultorios en el país</h4>
+        <ol>
+                <li>Calle General Anaya No. 546, Chapultepec Sur, 58260, Michoacán</li>
+                <li>8 NTE SN PISO. 2, Obrera, 93260, Veracruz</li>
+                <li>314 90 No. S/N, Nueva Atzacoalco, 07420, Gustavo A. Madero</li>
+                <li>Colón No. 189 No. A, Ciudad Guzmán Centro, 49000, Jalisco</li>
+                <li>Tlaxcala No. 3021, Cp. 32300, Juárez, Chihuahua</li>
+        </ol>
+        <section id="CITA">
+            <h4>Formulario de Consulta</h4>
+            <form method="post" action="/">
+                <fieldset>
+                    <legend>Datos personales del usuario</legend>
+                    <div>
+                        <label>Nombre
+                            <input type="text" name="name" id="name" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Edad
+                            <input type="number" name="age" id="age" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Fecha de Nacimiento
+                            <input type="date" name="birthdate" id="birthdate" max="2024-03-02" required>
+                        </label>
+                    </div>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Informacion de contacto</legend>
+                    <div>
+                        <label>Correo electronico
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                    </div>
+                    <div>
+                        <label>Numero de telefono
+                            <input type="tel" name="phone" id="phone" required>
+                        </label>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion medica (opcional)</legend>
+                    <div>
+                        <label>Alergias
+                            <input type="text" name="alergia" id="alergia">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Afecciones previas
+                            <input type="text" name="afeccion" id="afeccion">
+                        </label>
+                    </div>
+                    <div>
+                        <label>Antecedentes medicos
+                            <input type="text" name="antecedentes" id="antecedentes">
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Lugar de la consulta</legend>
+                    <label>Consultorio
+                        <select name="consultorio" id="consultorio">
+                            <option value="1">Calle General Anaya No. 546, Chapultepec Sur, 58260, Michoacán</option>
+                            <option value="2">8 NTE SN PISO. 2, Obrera, 93260, Veracruz</option>
+                            <option value="3">314 90 No. S/N, Nueva Atzacoalco, 07420, Gustavo A. Madero</option>
+                            <option value="4">Colón No. 189 No. A, Ciudad Guzmán Centro, 49000, Jalisco</option>
+                            <option value="5">Tlaxcala No. 3021, Cp. 32300, Juárez, Chihuahua</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <button id="enviar">Enviar Formulario</button>
+            </form>
+            <script src="script.js"></script>
+        </section>
+        <div id="FAQ">
+            <details>
+                <summary>¿Cuales son nuestros precios?</summary>
+                <p>Procuramos tener los precios mas accesibles dentro del mercado, a pesar de esto nuestros precios varian 
+                dependiendo el servicio solicitado, te invitamos a mandar un correo para concer mas informacion.</p>
+            </details>
+            <details>
+                <summary>Metodos de pago</summary>
+                Aceptamos varios metodos de pago como:
+                <ul>
+                    <li>Tarjeta de credito</li>
+                    <li>Tarjeta de debido</li>
+                    <li>Paypal</li>
+                    <li>Pago en efectivo</li>
+                </ul>
+            </details>
+            <details>
+                <summary>Experiencia</summary>
+                <p>Somos una empresa la cual es relativamente nueva, sin embargo buscamos ser vanguardia 
+                para siempre tener la mejor informacion al momento de atender a nuestros pacientes</p>
+            </details>
+            <details>
+                <summary>¿Puedo elegir quien me atendera?</summary>
+                <p>Actualmente somos una empresa algo pequeña por lo cual no contamos con un personal tan amplio
+                    sin embargo buscamos que esto sea posible en un futuro.</p>
+            </details>
+
+        </div>
+    </main>
+        <footer>
+            <p>
+                <small>
+                Copiright © 2024 - Todos los derechos comerciales reservados
+            </p>
+            <a href="mailto:c.ivanovich.214@gmail.com">Contactanos via correo</a>
+            <a href="tel:+553323112955">Soporte via telefono</a>
+                </small>
+        </footer>
+    
+</body>
+</html>

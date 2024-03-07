@@ -1,0 +1,216 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 1.3rem;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 3px;
+    padding: 0;
+    background-color: #d3f4fc;
+    
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+nav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2c3e50;
+    z-index: 1000; 
+}
+nav img{
+    height:100px ;
+}
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero-section {
+    background: url('images/background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    border-bottom: 1px solid #3498db;
+}
+
+.hero-section h1 {
+    color: #ecf0f1;
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero-section a:hover {
+    background-color: #2980b9;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+    text-align: center;
+}
+
+
+aside {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-size: 35px;
+    margin-top: 30px;
+    color: #2c3e50;
+}
+
+#CITA h4, #CONSULTORIOS, h3 {
+    margin: 50px;
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+#CITA {
+    background: url('images/fondo2.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-left: auto; 
+    margin-right: 25px; 
+}
+
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #3498db;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #93c2f1;
+}
+
+legend {
+    font-size: 1.2em;
+    color: #000000;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+button {
+    background-color: #3498db;
+    color: #ecf0f1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+footer small {
+    display: block;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+#FAQ{
+    background-color: #c5c3c3;
+    margin: 25px;
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+details{
+    padding: 10px;
+    border-bottom: 1px dashed rgb(104, 102, 102);
+}
